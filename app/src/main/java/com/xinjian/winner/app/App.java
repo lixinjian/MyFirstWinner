@@ -15,6 +15,8 @@ import com.xinjian.winner.di.module.HttpModule;
 import java.util.HashSet;
 import java.util.Set;
 
+import io.realm.Realm;
+
 /**
  * Created by Administrator on 2017/5/19 0019.
  */
@@ -43,8 +45,16 @@ public class App extends Application {
         super.onCreate();
         getScreenSize();
         //初始化数据库
-//        Realm.init(getApplicationContext());
+        Realm.init(getApplicationContext());
 
+        //在子线程中完成其他初始化
+//        InitalizeService.start(this);
+    }
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+//        MultiDex.install(this);
     }
 
     public void addActivity(Activity act) {
