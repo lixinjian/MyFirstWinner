@@ -8,6 +8,7 @@ import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.WindowManager;
 
+import com.xinjian.winner.component.InitalizeService;
 import com.xinjian.winner.di.component.AppComponent;
 import com.xinjian.winner.di.module.AppModule;
 import com.xinjian.winner.di.module.HttpModule;
@@ -48,7 +49,7 @@ public class App extends Application {
         Realm.init(getApplicationContext());
 
         //在子线程中完成其他初始化
-//        InitalizeService.start(this);
+        InitalizeService.start(this);
     }
 
     @Override
