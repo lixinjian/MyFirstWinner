@@ -102,13 +102,13 @@ public class App extends Application {
         }
     }
 
-//    public static AppComponent getAppComponent(){
-//        if (appComponent == null) {
-//            appComponent = DaggerAppComponent.builder()
-//                    .appModule(new AppModule(instance))
-//                    .httpModule(new HttpModule())
-//                    .build();
-//        }
-//        return appComponent;
-//    }
+    public static AppComponent getAppComponent(){
+        if (appComponent == null) {
+            appComponent = DaggerAppComponent.builder()
+                    .appModule(new AppModule(instance))
+                    .httpModule(new HttpModule())
+                    .build();
+        }
+        return appComponent;
+    }
 }

@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
+//apply plugin: 'kotlin-android'
 apply plugin: 'android-apt'
 apply plugin: 'realm-android'
 
@@ -38,13 +38,15 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'javax.inject:javax.inject:1'
     testCompile 'junit:junit:4.12'
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+//    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 
     /**
      * base
      */
     compile rootProject.ext.dependencies["design"]
 
+    //ui
+    compile rootProject.ext.dependencies["glide-transformations"]
 
     /**
      *  di
@@ -70,6 +72,8 @@ dependencies {
     compile rootProject.ext.dependencies["retrofit-adapter-rxjava2"]
     compile rootProject.ext.dependencies["okhttp"]
     compile rootProject.ext.dependencies["okhttp-logging-interceptor"]
+    compile rootProject.ext.dependencies["glide"]
+    compile rootProject.ext.dependencies["glide-okhttp3-integration"]
     /**
      *  other
      */

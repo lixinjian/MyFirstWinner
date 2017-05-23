@@ -58,4 +58,25 @@ public class Constants {
 
     public static final String PATH_SDCARD = Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "codeest" + File.separator + "GeekNews";
 
+    public static final String KEY_API = "";//"52b7ec3471ac3bec6846577e79f20e4c"; //需要APIKEY请去 http://www.tianapi.com/#wxnew 申请,复用会减少访问可用次数
+
+    public static final String LEANCLOUD_ID = "mhke0kuv33myn4t4ghuid4oq2hjj12li374hvcif202y5bm6";
+
+    public static final String LEANCLOUD_SIGN = "badc5461a25a46291054b902887a68eb,1480438132702";
+
+    //================= PREFERENCE ====================
+
+    public static final String SP_NIGHT_MODE = "night_mode";
+
+    public static final String SP_NO_IMAGE = "no_image";
+
+    public static final String SP_AUTO_CACHE = "auto_cache";
+
+    public static final String SP_CURRENT_ITEM = "current_item";
+
+    public static final String SP_LIKE_POINT = "like_point";
+
+    public static final String SP_VERSION_POINT = "version_point";
+
+    public static final String SP_MANAGER_POINT = "manager_point";
 }
