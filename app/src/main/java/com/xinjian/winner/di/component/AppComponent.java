@@ -1,5 +1,8 @@
 package com.xinjian.winner.di.component;
 
+import com.xinjian.winner.app.App;
+import com.xinjian.winner.di.module.AppModule;
+
 import dagger.Component;
 
 /**
@@ -7,7 +10,9 @@ import dagger.Component;
  */
 
 @javax.inject.Singleton
-//@Component(modules = AppModule.class,)
+@Component(modules = AppModule.class,HttpModule.class)
 public interface AppComponent {
+
+    App getContext(); //提供app的context
 
 }
