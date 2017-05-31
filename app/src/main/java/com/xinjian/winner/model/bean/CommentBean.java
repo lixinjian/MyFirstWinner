@@ -1,4 +1,4 @@
-package com.codeest.geeknews.model.bean;
+package com.xinjian.winner.model.bean;
 
 import java.util.List;
 
