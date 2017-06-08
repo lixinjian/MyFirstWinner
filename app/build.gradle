@@ -78,6 +78,8 @@ dependencies {
      *  other
      */
     compile rootProject.ext.dependencies["fragmentation"]
+    compile rootProject.ext.dependencies["multidex"]
+
     //日志
     compile rootProject.ext.dependencies["logger"]
     //错误收集
