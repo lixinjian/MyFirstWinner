@@ -47,6 +47,8 @@ dependencies {
 
     //ui
     compile rootProject.ext.dependencies["glide-transformations"]
+    compile rootProject.ext.dependencies["material-calendarview"]
+    compile rootProject.ext.dependencies["materialsearchview"]
 
     /**
      *  di

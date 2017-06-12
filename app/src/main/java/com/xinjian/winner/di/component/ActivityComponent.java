@@ -5,6 +5,7 @@ import android.app.Activity;
 
 import com.xinjian.winner.di.module.ActivityModule;
 import com.xinjian.winner.di.scope.ActivityScope;
+import com.xinjian.winner.ui.main.activity.MainActivity;
 import com.xinjian.winner.ui.main.activity.WelcomeActivity;
 
 import dagger.Component;
@@ -20,8 +21,8 @@ public interface ActivityComponent {
     Activity getActivity();
 
     void inject(WelcomeActivity welcomeActivity);
-//
-//    void inject(MainActivity mainActivity);
+
+    void inject(MainActivity mainActivity);
 //
 //    void inject(ZhihuDetailActivity zhihuDetailActivity);
 //
