@@ -75,24 +75,25 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainCon
 
     private SupportFragment getTargetFragment(int item) {
         switch (item) {
-            case Constants.TYPE_ZHIHU:
-                return mZhihuFragment;
-            case Constants.TYPE_GANK:
-                return mGankFragment;
-            case Constants.TYPE_WECHAT:
-                return mWechatFragment;
-            case Constants.TYPE_GOLD:
-                return mGoldFragment;
-            case Constants.TYPE_VTEX:
-                return mVtexFragment;
-            case Constants.TYPE_LIKE:
-                return mLikeFragment;
-            case Constants.TYPE_SETTING:
-                return mSettingFragment;
-            case Constants.TYPE_ABOUT:
-                return mAboutFragment;
+//            case Constants.TYPE_ZHIHU:
+//                return mZhihuFragment;
+//            case Constants.TYPE_GANK:
+//                return mGankFragment;
+//            case Constants.TYPE_WECHAT:
+//                return mWechatFragment;
+//            case Constants.TYPE_GOLD:
+//                return mGoldFragment;
+//            case Constants.TYPE_VTEX:
+//                return mVtexFragment;
+//            case Constants.TYPE_LIKE:
+//                return mLikeFragment;
+//            case Constants.TYPE_SETTING:
+//                return mSettingFragment;
+//            case Constants.TYPE_ABOUT:
+//                return mAboutFragment;
         }
-        return mZhihuFragment;
+//        return mZhihuFragment;
+        return null;
     }
 
     private int getCurrentItem(int item) {
